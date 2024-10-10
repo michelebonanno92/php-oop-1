@@ -1,29 +1,63 @@
 <?php
 
     class Movie {
-        public $name;
-        public $year;
-        public $type;
+        public $title;  // string
+        public $year;   // int
+        public $type;   // string
+        public $actors; // array string
+        public $vote;   // int
+        public $director;  // string
+        public $duration;  // int
 
     }
 
 
-    $pino = new Movie();
-    $pino->name = 'Pino';
-    $pino->year = 1999;
-    $pino->type = 'comic';
+    $LUltimoDeiSamurai = new Movie();
+    $LUltimoDeiSamurai->title = 'LUltimoDeiSamurai';
+    $LUltimoDeiSamurai->year = 2003;
+    $LUltimoDeiSamurai->type = [
+        'adventure',
+        'dramatic',
+        'historical',
+        'action',
+    ];
+    $LUltimoDeiSamurai->actors = [
+        'Tom Cruise',
+        'Ken Watanabe',
+        'Tony Goldwyn',
+        'Shichinosuke Nakamura',
+    ];
+    $LUltimoDeiSamurai->vote = 5;
+    $LUltimoDeiSamurai->director = 'Edward Zwick';
+    $LUltimoDeiSamurai->duration = 150;
+
+    var_dump( $LUltimoDeiSamurai);
+    
 
 
-    var_dump($pino);
+ 
 
+    $Braveheart = new Movie();
+    $Braveheart->title = 'Braveheart';
+    $Braveheart->year = 1995;
+    $Braveheart->type = [
+        'epic',
+        'dramatic',
+        'historical',
+        'biographical',
+    ];
+    $Braveheart->actors = [
+        'Mel Gibson',
+        'Sophie Marceau',
+        'Brendan Gleeson',
+        'James Cosmo',
+    ];
+    $Braveheart->vote = 5;
+    $Braveheart->director = 'Mel Gibson';
+    $Braveheart->duration = 177;
 
-
-
-
-
-
-
-
+    var_dump( $Braveheart);
 
 
 ?>
+
