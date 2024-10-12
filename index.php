@@ -29,7 +29,7 @@
 
 
     $LUltimoDeiSamurai = new Movie();
-    $LUltimoDeiSamurai->setTitle(66666);
+    $LUltimoDeiSamurai->setTitle("L'ultimo dei samurai");
     $LUltimoDeiSamurai->year = 2003;
     $LUltimoDeiSamurai->genres = [
         'adventure',
@@ -47,7 +47,9 @@
     $LUltimoDeiSamurai->director = 'Edward Zwick';
     $LUltimoDeiSamurai->duration = 150;
 
-    var_dump( $LUltimoDeiSamurai);
+    var_dump($LUltimoDeiSamurai);
+    var_dump($LUltimoDeiSamurai->getTitle());
+
     
 
 
