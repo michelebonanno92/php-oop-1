@@ -79,10 +79,28 @@
 
 
 
+    $Braveheart = new Movie(
+        'Braveheart',
+        1995,
+        [
+            'epic',
+            'dramatic',
+            'historical',
+            'biographical',
+        ], 
+        [
+            'Mel Gibson',
+            'Sophie Marceau',
+            'Brendan Gleeson',
+            'James Cosmo',
+         ],
+        5,
+        'Mel Gibson',
+        177
+        );
+
+    var_dump($Braveheart);
     
-
-
- 
 
     // $Braveheart = new Movie();
     // $Braveheart->setTitle('Braveheart');
@@ -103,7 +121,6 @@
     // $Braveheart->director = 'Mel Gibson';
     // $Braveheart->duration = 177;
 
-    // var_dump( $Braveheart);
 
 
 ?>
