@@ -1,21 +1,27 @@
 <?php
-
+    // il nome della classe si scrive in Pascal case
     class Movie {
+        // variabili o attributi 
         public $title;  // string
         public $year;   // int
-        public $type;   // string
-        public $actors; // array string
+        public $genres;   // array di string
+        public $actors; // array di string
         public $vote;   // int
         public $director;  // string
         public $duration;  // int
+
+        public function setTitle($title) {
+            $this->title = $title;
+        }
+
 
     }
 
 
     $LUltimoDeiSamurai = new Movie();
-    $LUltimoDeiSamurai->title = 'LUltimoDeiSamurai';
+    $LUltimoDeiSamurai->setTitle('LUltimoDeiSamurai');
     $LUltimoDeiSamurai->year = 2003;
-    $LUltimoDeiSamurai->type = [
+    $LUltimoDeiSamurai->genres = [
         'adventure',
         'dramatic',
         'historical',
@@ -40,7 +46,7 @@
     $Braveheart = new Movie();
     $Braveheart->title = 'Braveheart';
     $Braveheart->year = 1995;
-    $Braveheart->type = [
+    $Braveheart->genres = [
         'epic',
         'dramatic',
         'historical',
