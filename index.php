@@ -25,7 +25,7 @@
         public function getTitle() {
             return $this->title;
         }
-
+        // funzione per impostare dei filtri
         public function setTitle($title) {
             if (is_string($title) && strlen($title) > 3 ){
                 $this->title = $title;
@@ -58,6 +58,7 @@
 
     var_dump($LUltimoDeiSamurai);
     var_dump($LUltimoDeiSamurai->getTitle());
+    
     // $LUltimoDeiSamurai = new Movie();
     // $LUltimoDeiSamurai->setTitle("L'ultimo dei samurai");
     // $LUltimoDeiSamurai->year = 2003;
