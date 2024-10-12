@@ -10,12 +10,18 @@
         public $director;  // string
         public $duration;  // int
 
-        public function setTitle($title) {
-            if (is_string($title) && strlen($title) > 3 )
-            $this->title = $title;
+        // aggiunta funzione getTitle per prendere il valore di title ora che è private
+        public function getTitle() {
+            return $this->title;
         }
-        else{
-            // lanciare un errore 
+
+        public function setTitle($title) {
+            if (is_string($title) && strlen($title) > 3 ){
+                $this->title = $title;
+            }
+            else {
+                // lanciare un errore 
+            }
         }
 
 
@@ -23,7 +29,7 @@
 
 
     $LUltimoDeiSamurai = new Movie();
-    $LUltimoDeiSamurai->setTitle('eerr');
+    $LUltimoDeiSamurai->setTitle(66666);
     $LUltimoDeiSamurai->year = 2003;
     $LUltimoDeiSamurai->genres = [
         'adventure',
